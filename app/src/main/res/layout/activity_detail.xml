@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- Front cover image of the book -->
+        <ImageView
+                android:id="@+id/front_cover_art_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/book_cover_image"
+                android:src="@drawable/ic_launcher_background"/>
+
+        <!-- Title of the book -->
+        <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#110B0B"
+                android:id="@+id/book_title_text_view"
+                style="@style/book_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_spacing"
+
+                tools:text="Title"/>
+
+        <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/book_info_centering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/vertical_spacing"
+                android:orientation="vertical">
+
+            <!-- Author of the book -->
+            <TextView
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/author_text_view"
+                    style="@style/book_author_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Author"/>
+
+
+            <TextView
+
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#110B0B"
+                    android:id="@+id/book_desk_text_view"
+                    style="@style/book_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/vertical_spacing"
+
+                    tools:text="Title"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

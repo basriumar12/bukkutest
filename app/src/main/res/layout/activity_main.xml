@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.MainActivity">
+
+
+
+
+    <androidx.cardview.widget.CardView
+            android:padding="4dp"
+            app:cardMaxElevation="3dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+    <SearchView
+            android:layout_margin="3dp"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@null"
+            android:background="@drawable/search_wishlist_border"
+            android:ems="10"
+            app:defaultQueryHint="Cari produk "
+            android:clickable="true"
+            android:textSize="10dp"
+            app:searchHintIcon="@null"
+            android:textColorHint="@android:color/darker_gray"
+            android:gravity="left|center"
+
+            android:id="@+id/search_book"
+            app:queryHint="Cari Buku "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rv_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
