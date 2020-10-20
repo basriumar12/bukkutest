@@ -95,7 +95,9 @@ class BookAdapter(var context: Context?, var list: List<ItemsItem>) :
                 ,
                 "image" to list.get(position).volumeInfo?.imageLinks?.thumbnail
                 ,
-                "author" to list.get(position).volumeInfo?.imageLinks?.thumbnail
+                "author" to list.get(position).volumeInfo?.imageLinks?.thumbnail,
+                 
+                "data" to list.get(position).volumeInfo?.imageLinks?.thumbnail,
             )
 
         }
