@@ -67,7 +67,8 @@ class MainActivity : BaseActivity(), ViewBook {
     }
 
     private fun initView() {
-        rv_book.layoutManager = GridLayoutManager(this, 2)
+        ///get data
+        rv_book.layoutManager = GridLayoutManager(this, 1)
         val orientation = this.resources.configuration.orientation
         // Set span count based on orientation
         if (orientation == Configuration.ORIENTATION_PORTRAIT) {
